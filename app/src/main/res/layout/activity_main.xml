@@ -1,18 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
     tools:context="com.odinson.loki.app_bs.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/Logo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="monospace"
+        android:text="ФЕДЕРАЛЬНАЯ НАЛОГОВАЯ СЛУЖБА"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="?attr/actionMenuTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
 
-</android.support.constraint.ConstraintLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100px" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="НАЛОГОВЫЙ  ПАСПОРТ  СУБЪЕКТА  РОССИЙСКОЙ  ФЕДЕРАЦИИ"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="По состоянию на 01.01.2016"
+        android:textAlignment="center"
+        android:textSize="10sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100px" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Субъект Российской Федерации:     Республика Крым"
+        android:textColor="?android:attr/colorControlNormal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Областной центр:                                   г. Симферополь"
+        android:textColor="?attr/colorControlNormal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Федеральный округ:   Крымский Федеральный Округ"
+        android:textColor="?attr/colorControlNormal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Код Управление ФНС России:                                    9100" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100px" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Holo.SegmentedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:elevation="0dp"
+        android:text="Руководители" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Holo.Light.SegmentedButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.60"
+
+        android:text="Содержание" />
+
+
+</LinearLayout>
